@@ -7,10 +7,10 @@ from dwave.embedding.chain_strength import uniform_torque_compensation
 
 import dwave.inspector
 
-n_list=[50]
-m_list=[10]
+n_list=[0]
+m_list=[0]
 l_list=[0]
-A_size=[3]
+A_size=[0]
 
 def makekrlist(n,m,A,A_list):
     k = [0 for i in range(n)]
@@ -59,10 +59,10 @@ with open(f"./dataset/example{f1}_{f2}_{f3}_{f4}.csv", "r") as f:
     
     k,r = makekrlist(n+1,m,A,A_list)
     
-P = 768
+P = 10
 P_add = int(P/10)
 runtime = 0
-numruns = 3000 #1000
+numruns = 300 #1000
 chain_prm = 1.78
 print(f"P={P}, numruns={numruns}, chain_prm={chain_prm}\n")
 with open(f"./output/output_{P}_{numruns}_{chain_prm}.txt", "a") as op1:

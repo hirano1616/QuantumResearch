@@ -1,0 +1,103 @@
+######################################
+P=10, numruns=300, chain_prm=1.78
+{0, 4}
+energy=-34.0, occurrence=102, chain_break=0.0
+元問題の最適値？: 6.0
+実際のコスト: 6
+[1, 1, 1, 1]
+実行可能! 元問題の最適値は6.0
+{2}
+energy=-29.0, occurrence=25, chain_break=0.0
+元問題の最適値？: 11.0
+実際のコスト: 1
+[1, 1, 1, 0]
+実行不可能!
+{2, 3}
+energy=-28.0, occurrence=19, chain_break=0.0
+元問題の最適値？: 12.0
+実際のコスト: 2
+[1, 1, 2, 1]
+実行不可能!
+{5}
+energy=-28.0, occurrence=7, chain_break=0.0
+元問題の最適値？: 12.0
+実際のコスト: 2
+[1, 1, 0, 1]
+実行不可能!
+{1, 2}
+energy=-27.0, occurrence=73, chain_break=0.0
+元問題の最適値？: 13.0
+実際のコスト: 3
+[1, 2, 1, 1]
+実行不可能!
+{3, 5}
+energy=-27.0, occurrence=4, chain_break=0.0
+元問題の最適値？: 13.0
+実際のコスト: 3
+[1, 1, 1, 2]
+実行不可能!
+{0, 2}
+energy=-26.0, occurrence=53, chain_break=0.0
+元問題の最適値？: 14.0
+実際のコスト: 4
+[2, 1, 1, 1]
+実行不可能!
+{4, 5}
+energy=-25.0, occurrence=4, chain_break=0.0
+元問題の最適値？: 15.0
+実際のコスト: 5
+[1, 2, 1, 1]
+実行不可能!
+{3}
+energy=-19.0, occurrence=2, chain_break=0.0
+元問題の最適値？: 21.0
+実際のコスト: 1
+[0, 0, 1, 1]
+実行不可能!
+{1}
+energy=-18.0, occurrence=1, chain_break=0.0
+元問題の最適値？: 22.0
+実際のコスト: 2
+[0, 1, 0, 1]
+実行不可能!
+{2, 5}
+energy=-17.0, occurrence=2, chain_break=0.0
+元問題の最適値？: 23.0
+実際のコスト: 3
+[2, 2, 1, 1]
+実行不可能!
+{0, 3}
+energy=-16.0, occurrence=1, chain_break=0.0
+元問題の最適値？: 24.0
+実際のコスト: 4
+[1, 0, 1, 2]
+実行不可能!
+{0, 1}
+energy=-15.0, occurrence=2, chain_break=0.0
+元問題の最適値？: 25.0
+実際のコスト: 5
+[1, 1, 0, 2]
+実行不可能!
+{1, 4}
+energy=-15.0, occurrence=2, chain_break=0.0
+元問題の最適値？: 25.0
+実際のコスト: 5
+[0, 2, 1, 1]
+実行不可能!
+{0, 1, 4}
+energy=-12.0, occurrence=2, chain_break=0.0
+元問題の最適値？: 28.0
+実際のコスト: 8
+[1, 2, 1, 2]
+実行不可能!
+{0, 1, 2}
+energy=-4.0, occurrence=1, chain_break=0.0
+元問題の最適値？: 36.0
+実際のコスト: 6
+[2, 2, 1, 2]
+実行不可能!
+{'qpu_sampling_time': 31896.0, 'qpu_anneal_time_per_sample': 50.0, 'qpu_readout_time_per_sample': 35.3, 'qpu_access_time': 38741.6, 'qpu_access_overhead_time': 289.4, 'qpu_programming_time': 6845.6, 'qpu_delay_time_per_sample': 21.02, 'total_post_processing_time': 1620.0, 'post_processing_overhead_time': 1620.0}
+実際最小の値を持つ解:{0, 4} 値:6
+解の分割状況[1, 1, 1, 1]
+実行可能解/試行回数 = 0.33333333333333337
+######################################
