@@ -1,0 +1,163 @@
+######################################
+P=41, numruns=1000, chain_prm=1.78
+{1}
+energy=-3.0, occurrence=13, chain_break=0.0
+元問題の最適値？: 38.0
+実際のコスト: 38
+[1]
+実行可能! 元問題の最適値は38.0
+{2}
+energy=-3.0, occurrence=25, chain_break=0.0
+元問題の最適値？: 38.0
+実際のコスト: 38
+[1]
+実行可能! 元問題の最適値は38.0
+{5}
+energy=-3.0, occurrence=210, chain_break=0.0
+元問題の最適値？: 38.0
+実際のコスト: 38
+[1]
+実行可能! 元問題の最適値は38.0
+{6}
+energy=-2.0, occurrence=66, chain_break=0.0
+元問題の最適値？: 39.0
+実際のコスト: 39
+[1]
+実行可能! 元問題の最適値は39.0
+{3}
+energy=0.0, occurrence=89, chain_break=0.0
+元問題の最適値？: 41.0
+実際のコスト: 41
+[1]
+実行可能! 元問題の最適値は41.0
+{0}
+energy=0.0, occurrence=165, chain_break=0.0
+元問題の最適値？: 41.0
+実際のコスト: 41
+[1]
+実行可能! 元問題の最適値は41.0
+set()
+energy=0.0, occurrence=35, chain_break=0.0
+元問題の最適値？: 41.0
+実際のコスト: 0
+[0]
+実行不可能!
+{9}
+energy=1.0, occurrence=293, chain_break=0.0
+元問題の最適値？: 42.0
+実際のコスト: 42
+[1]
+実行可能! 元問題の最適値は42.0
+{7}
+energy=2.0, occurrence=11, chain_break=0.0
+元問題の最適値？: 43.0
+実際のコスト: 43
+[1]
+実行可能! 元問題の最適値は43.0
+{4}
+energy=3.0, occurrence=30, chain_break=0.0
+元問題の最適値？: 44.0
+実際のコスト: 44
+[1]
+実行可能! 元問題の最適値は44.0
+{8}
+energy=4.0, occurrence=27, chain_break=0.0
+元問題の最適値？: 45.0
+実際のコスト: 45
+[1]
+実行可能! 元問題の最適値は45.0
+{10}
+energy=43.0, occurrence=9, chain_break=0.0
+元問題の最適値？: 84.0
+実際のコスト: 84
+[1]
+実行可能! 元問題の最適値は84.0
+{1, 5}
+energy=76.0, occurrence=1, chain_break=0.09090909090909091
+元問題の最適値？: 117.0
+実際のコスト: 76
+[2]
+実行不可能!
+{0, 5}
+energy=79.0, occurrence=1, chain_break=0.0
+元問題の最適値？: 120.0
+実際のコスト: 79
+[2]
+実行不可能!
+{9, 5}
+energy=80.0, occurrence=9, chain_break=0.0
+元問題の最適値？: 121.0
+実際のコスト: 80
+[2]
+実行不可能!
+{1, 9}
+energy=80.0, occurrence=1, chain_break=0.0
+元問題の最適値？: 121.0
+実際のコスト: 80
+[2]
+実行不可能!
+{0, 3}
+energy=82.0, occurrence=1, chain_break=0.0
+元問題の最適値？: 123.0
+実際のコスト: 82
+[2]
+実行不可能!
+{0, 9}
+energy=83.0, occurrence=5, chain_break=0.0
+元問題の最適値？: 124.0
+実際のコスト: 83
+[2]
+実行不可能!
+{0, 7}
+energy=84.0, occurrence=1, chain_break=0.0
+元問題の最適値？: 125.0
+実際のコスト: 84
+[2]
+実行不可能!
+{0, 4}
+energy=85.0, occurrence=1, chain_break=0.0
+元問題の最適値？: 126.0
+実際のコスト: 85
+[2]
+実行不可能!
+{9, 4}
+energy=86.0, occurrence=1, chain_break=0.0
+元問題の最適値？: 127.0
+実際のコスト: 86
+[2]
+実行不可能!
+{0, 8}
+energy=86.0, occurrence=2, chain_break=0.0
+元問題の最適値？: 127.0
+実際のコスト: 86
+[2]
+実行不可能!
+{8, 9}
+energy=87.0, occurrence=1, chain_break=0.0
+元問題の最適値？: 128.0
+実際のコスト: 87
+[2]
+実行不可能!
+{8, 4}
+energy=89.0, occurrence=1, chain_break=0.0
+元問題の最適値？: 130.0
+実際のコスト: 89
+[2]
+実行不可能!
+{10, 7}
+energy=127.0, occurrence=1, chain_break=0.0
+元問題の最適値？: 168.0
+実際のコスト: 127
+[2]
+実行不可能!
+{10, 4}
+energy=128.0, occurrence=1, chain_break=0.0
+元問題の最適値？: 169.0
+実際のコスト: 128
+[2]
+実行不可能!
+{'qpu_sampling_time': 97100.0, 'qpu_anneal_time_per_sample': 50.0, 'qpu_readout_time_per_sample': 26.08, 'qpu_access_time': 103946.01, 'qpu_access_overhead_time': 403.99, 'qpu_programming_time': 6846.01, 'qpu_delay_time_per_sample': 21.02, 'total_post_processing_time': 990.0, 'post_processing_overhead_time': 990.0}
+実際最小の値を持つ解:{5} 値:38
+解の分割状況[1]
+実行可能解/試行回数 = 1.0999999999999999
+######################################

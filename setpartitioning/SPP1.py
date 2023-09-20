@@ -38,6 +38,17 @@ def makeQList(n,c,k,r,P):
 f1 = 10
 m_list = [i for i in range(int(f1/10), f1, int(f1/10))]
 l_list = [i for i in range(10)]
+
+timeP = 1.1
+numruns = 1000 #1000
+chain_prm = 1.78
+
+with open(f"./output/setpartitioning_mip_n={f1}_out.csv", "r") as defineP:
+    reader = csv.reader(defineP)
+    for row in reader:
+        P_list = row
+    # print(P_list)
+
 for f2 in m_list:
     f4 = int(sqrt(f2))
     for f3 in l_list:
@@ -55,16 +66,11 @@ for f2 in m_list:
             
             k,r = makekrlist(n+1,m,A,A_list)
 
-        # 9/20 ここを弄る 
-        P = 16
-        P_add = int(P/10)
-        ########ここまで########
-
-        runtime = 0
-        numruns = 1000 #1000
-        chain_prm = 1.78
+        opvalue = int(P_list.pop(0))
+        P = int(opvalue*timeP)
+               
         print(f"P={P}, numruns={numruns}, chain_prm={chain_prm}\n")
-        with open(f"./output/output_{P}_{numruns}_{chain_prm}.txt", "a") as op1:
+        with open(f"./output/output_{f1}_{f2}_{f3}_{f4}.txt", "a") as op1:
             op1.write("######################################\n")
             op1.write(f"P={P}, numruns={numruns}, chain_prm={chain_prm}\n")
             Q_list = makeQList(n+1,c,k,r,P)
@@ -126,7 +132,6 @@ for f2 in m_list:
 
             t = response.info['timing']
             op1.write(f"{t}\n")
-            runtime = runtime + (t['qpu_programming_time']+t['qpu_delay_time_per_sample'])/1000000 #調整
             op1.write(f"実際最小の値を持つ解:{min_sol} 値:{min_cost}\n")
             op1.write(f"解の分割状況{min_check}\n")
             feasible_prm = feasible_count/numruns * 100
@@ -139,5 +144,4 @@ for f2 in m_list:
             print(f"実行可能解/試行回数 = {feasible_prm}\n")
             calc_chain = response.info['embedding_context']['chain_strength']
             print(f"calc_chain = {calc_chain}\n")
-            print(f"最終時間{runtime}\n")
-            dwave.inspector.show(response)
+            # dwave.inspector.show(response)
