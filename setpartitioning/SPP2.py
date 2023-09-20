@@ -72,6 +72,7 @@ for f2 in m_list:
         P = int(opvalue*timeP)
                
         # print(f"P={P}, numruns={numruns}, chain_prm={chain_prm}\n")
+        print(f"n={f1}, m={f2}, l={f3}\n")
         with open(f"./output/output_{f1}_{f2}_{f3}_{f4}.txt", "a") as op1:
             op1.write("######################################\n")
             op1.write(f"P={P}, numruns={numruns}, chain_prm={chain_prm}\n")
@@ -124,9 +125,9 @@ for f2 in m_list:
                 if flag == 0:
                     feasible_count += 1
                     op1.write(f"実行可能! 元問題の最適値は{e+m*P}\n")
-                    print(f"実行可能! 元問題の最適値は{e+m*P}\n")
-                    print(f"解{x_sol}\n")
-                    print(f"解から得られる関数値は{calc_cost}\n")
+                    # print(f"実行可能! 元問題の最適値は{e+m*P}\n")
+                    # print(f"解{x_sol}\n")
+                    # print(f"解から得られる関数値は{calc_cost}\n")
                     if min_cost >= calc_cost:
                         min_cost = calc_cost
                         min_sol = x_sol
@@ -141,8 +142,12 @@ for f2 in m_list:
             op1.write("######################################\n")
 
             
-            print(f"実際最小の値を持つ解:{min_sol} 値:{min_cost}\n")
-            print(f"解の分割状況{min_check}\n")
+            # print(f"実際最小の値を持つ解:{min_sol} 値:{min_cost}\n")
+            # print(f"解の分割状況{min_check}\n")
+            if(int(min_cost) == opvalue):
+                print("できる")
+            else:
+                print("できない")
             # print(f"実行可能解/試行回数 = {feasible_prm}\n")
             # calc_chain = response.info['embedding_context']['chain_strength']
             # print(f"calc_chain = {calc_chain}\n")
