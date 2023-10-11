@@ -37,7 +37,7 @@ def makeQList(n,c,k,r,P):
                 Q[i][j] = Q[j][i]
     return Q
 
-f1 = 20
+f1 = 30
 m_list = [i for i in range(int(f1/10), f1, int(f1/10))]
 l_list = [i for i in range(10)]
 
