@@ -37,7 +37,7 @@ def makeQList(n,c,k,r,P):
                 Q[i][j] = Q[j][i]
     return Q
 
-f1 = 10
+f1 = 99
 m_list = [i for i in range(int(f1/10), f1, int(f1/10))]
 l_list = [i for i in range(10)]
 
@@ -77,7 +77,9 @@ for f2 in m_list:
             op1.write("######################################\n")
             op1.write(f"P={P}, numruns={numruns}, chain_prm={chain_prm}\n")
             Q_list = makeQList(n+1,c,k,r,P)
+            print(len(Q_list))
             Q = {(i,j): Q_list[i][j] for i in range(n+1) for j in range(n+1) if Q_list[i][j] >= 0.1 or Q_list[i][j] <= -0.1}    
+            print(len(Q))
             chain_stgth = 0
             Q_list = [[abs(Q_list[j][i]) for i in range(n+1)] for j in range(n+1)]
             for i in range(n+1):
@@ -89,7 +91,9 @@ for f2 in m_list:
 
             chain_strength = partial(uniform_torque_compensation, prefactor=chain_prm)
 
-            solver = "Advantage2_prototype1.1"
+            # solver = "Advantage2_prototype1.1"
+            solver = "Advantage_system6.3"
+
             sampler=EmbeddingComposite(DWaveSampler(solver = solver))
 
             response = sampler.sample_qubo(Q, chain_strength=chain_strength, num_reads=numruns, label=f'set-partition P={P}', return_embedding = True, annealing_time = 50)

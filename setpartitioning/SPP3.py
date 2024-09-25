@@ -11,7 +11,7 @@ import dwave.inspector
 
 # timeP = 1.1
 numruns = 1000 #1000
-chain_prm = 1.75
+chain_prm = 1.50
 
 Q = dict()
 with open(f"qubo.csv", "r") as Qreader:
@@ -34,6 +34,8 @@ chain_strength = partial(uniform_torque_compensation, prefactor=chain_prm)
 
 
 solver = "Advantage_system6.3"
+# solver = "Advantage2_prototype1.1"
+
 sampler=EmbeddingComposite(DWaveSampler(solver = solver))
 time1 = time.time()
 response = sampler.sample_qubo(Q, chain_strength=chain_strength, num_reads=numruns, label='test', return_embedding = True, annealing_time = 50)
@@ -45,7 +47,7 @@ for s,e,o,chain_break in response.data(['sample', 'energy', 'num_occurrences', '
     break
 
 t = response.info['timing']
-print(f"t = {t}")
+print(f"t (ms)= {t}")
 
 dwave.inspector.show(response)
 
