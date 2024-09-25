@@ -144,4 +144,4 @@ for f2 in m_list:
             print(f"実行可能解/試行回数 = {feasible_prm}\n")
             calc_chain = response.info['embedding_context']['chain_strength']
             print(f"calc_chain = {calc_chain}\n")
-            # dwave.inspector.show(response)
+            dwave.inspector.show(response)
